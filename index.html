@@ -11,7 +11,27 @@
     </style> <!--belső css (internal)-->
     <title>Document</title> <!--weboldal címe-->
 </head>
-<body>
-    <h1 id="szin" style="color: blueviolet;">Szarjál sünt!</h1> <!--címsor h1-h6-ig van-->
+<body> <!--a felhasználónak ad információkat-->
+    <h1 id="szin" style="color: blueviolet;">Szarjál sünt!</h1> <!--címsor h1-h6-ig van, inline stílusbeállítás, a legerősebb-->
+    <p></p> <!--bekezdések létrehozása-->
+    <img src="link vagy img/kep.jpg" alt="ha a kép nem jeleníthető meg ezt a szöveget írja ki" title="ha az egeret a kép felé viszem kiírja ezt a szöveget"> <!--kép beillesztése, forrása lehet link vagy letöltött img mappában található kép, az alt és a title kötelező elem az ágazatin-->
+    <a href="weboldal címe vagy cica.html vagy ugrópont (#cica)" target="_blank"(új oldalon való megnyitás)></a> <!--link készítése új weboldalra navigálás vagy saját oldalon belül navigálás illetve ugrópont létrehozása úgy hogy az adott rész egyedi azonosítóját írjuk be a href-be-->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> <!--számozatlan felsorolás, beltagja az li, emmet kód (gyors kód): ul>li*3 - ez 3 listaelemet tartalmaz-->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol> <!--számozott felsorolás-->
+<ul id="cica" class="kutya">
+    <li>listaelem</li>
+    <li>listaelem</li>
+    <li>listaelem</li>
+    <li>listaelem</li>
+    <li>listaelem</li>
+</ul> <!--meglévő listaelemekből számozatlan felsorolás készítése, hozzáadva cica egyedi azonosító (id) és kutya osztályjelölő (class), gyors kódja: F1 gomb - wrap - Emmet: Wrap with Abbreviation kiválasztása (enter) - ul#cica.kutya>li*-->
 </body>
 </html>
