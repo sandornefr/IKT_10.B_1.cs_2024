@@ -16,7 +16,9 @@
     <h1 id="szin" style="color: blueviolet;">Szarjál sünt!</h1> <!--címsor h1-h6-ig van, inline stílusbeállítás, a legerősebb-->
     <p></p> <!--bekezdések létrehozása-->
     <img src="link vagy img/kep.jpg" alt="ha a kép nem jeleníthető meg ezt a szöveget írja ki" title="ha az egeret a kép felé viszem kiírja ezt a szöveget"> <!--kép beillesztése, forrása lehet link vagy letöltött img mappában található kép, az alt és a title kötelező elem az ágazatin-->
-    <a href="weboldal címe vagy cica.html vagy ugrópont (#cica)" target="_blank"(új oldalon való megnyitás)></a> <!--link készítése új weboldalra navigálás vagy saját oldalon belül navigálás illetve ugrópont létrehozása úgy hogy az adott rész egyedi azonosítóját írjuk be a href-be-->
+    <a href="https://..." target="_blank">LINK</a> <!--link, amely új oldalon nyílik meg-->
+    <a href="cica.html">SAJÁT OLDALRA NAVIGÁL</a>
+    <a href="#leiras">UGRÓPONT</a> <!--link, amely egy fejezet egyedi azonosítójához ugrik-->
     <ul>
         <li></li>
         <li></li>
@@ -37,7 +39,6 @@
 
 <!--2024. 11. 18. órai munka-->
 <br> <!--sortörés-->
-<hr> <!--hosszú vízszintes vonal-->
 <span></span> <!--egyedi formázási lehetőség-->
 <b></b> vagy <strong></strong> <!--félkövér betűformázás HTML tag segítségével-->
 <p class="fw-bold"></p> <!--félkövér stílusbeállítás bootstrap segítségével-->
@@ -46,8 +47,6 @@
 <u></u> <!--aláhúzás-->
 <p class="text-decoration-underline"></p> <!--aláhúzás Bootstrap segítségével-->
 <p class="text-decoration-none"></p> <!--aláhúzás megszüntetése Bootstrap segítségével-->
-<sub></sub> <!--alsó index-->
-<sup></sup> <!--felső index-->
 
 <table> <!--táblázat készítése-->
     <thead> <!--táblázat fejrésze-->
@@ -63,6 +62,49 @@
     </tbody>
     <tfoot></tfoot> <!--táblázat láb része-->
 </table>
+<div></div> <!--keret-->
+<!--az ágazatin előforduló tag-eknek itt a vége-->
 
+<!--2024. november 25.-ei órai munka-->
+<hr> <!--hosszú vízszintes vonal-->
+<form action=""> <!--űrlap készítése-->
+    <fieldset> <!--részekre bontható általa az űrlap, pl.: személyes adatok rész, szegélyt rak az adott rész köré-->
+        <legend>Személyes adatok</legend> <!--az adott rész címének beállítása, pl.: személyes adatok-->
+        <label for="nev">NÉV:</label> <!--megnevezés-->
+        <input type="text" name="nev" id="nev" placeholder="Kiss István">
+        <!--beviteli mező, sokféle típus van, egyedi azonosítóval a label összekapcsolható, a placeholderbe beírt szöveg segítséget ad a felhasználónak az űrlap kitöltésében-->
+        <!--input type lehet:
+        - szöveg (text),
+        - jelölő négyzet (checkbox) - ha több választás lehetséges,
+        - rádió gomb (radio) - egy választás lehetséges,
+        - email cím (email),
+        - szám (number),
+        - dátum (date),
+        - jelszó (password),
+        - idő (time)
+        stb., DE én csak a fent leírtakat fogom kérdezni!!-->
+    </fieldset>
+    <button type="button">GOMB</button> <!--gomb-->
+    <!--gombot kétféleképpen lehet hozzáadni a weboldalhoz:
+    1. input "tag" type="button" (sima gomb), type="submit" (Küldés), type="reset" (visszaállítás)
+    Ha beállítunk value-t (értéket), akkor csak azt fogja kiírni a gombra, amennyiben ezt kihagyjuk a böngésző a saját erre alkalmazott beállítását fogja használni az általad használt operációs rendszer nyelvén.
+    2. button "tag"type="button" (sima gomb), type="submit" (Küldés), type="reset" (visszaállítás)-->
+    <label for="uzenet">Üzenet a szakácsnak:</label>
+    <textarea name="message" id="uzenet" cols="30" rows="10"></textarea> <!--szövegmező nagyobb terjedelmű szövegek írása esetén pl.: Üzenet a szakácsnak: Nem kérek rukkolát a pizzára!-->
+    <label for="cars">AUTÓK:</label>
+    <select name="autok" id="cars"> <!--lenyíló menüs választási lehetőség-->
+        <option value=""></option> <!--lenyíló menü eleme-->
+        <option value="">Audi</option>
+        <option value="">BMW</option>
+        <option value="">Ford</option>
+        <option value="">Fiat</option>
+    </select>
+</form>
+<nav></nav> <!--menürendszer kialakítása-->
+<header></header> <!--fejléc a body-n belül-->
+<footer></footer> <!--lábléc a body-n belül-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3QakihAEwoU?si=pQ-vWgNP-8DxB9ty" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--videókat lehet beilleszteni a weboldalra-->
+<sub></sub> <!--alsó index-->
+<sup></sup> <!--felső index-->
 </body>
 </html>
