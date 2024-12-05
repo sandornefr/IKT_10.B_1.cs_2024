@@ -5,14 +5,16 @@ body {
     color: red; /*betűszín*/
     color: #ffffff; /*betűszín hexakód*/
     color: rgb(252,242,75); /*betűszín RGB kóddal*/
-    font-size: 0.9em; /*alapértelmezett (1em) betűmérettől 10%-kkal kisebb*/
+    font-size: 0.9em; /*alapértelmezett (1em) betűmérettől 10%-kal kisebb*/
     font-variant: small-caps; /*kiskapitális*/
     text-transform: uppercase; /*nagybetűs*/
+    text-decoration: underline; /*aláhúzott*/
     text-decoration: none; /*aláhúzás megszüntetése*/
     text-align: justify; /*sorkizárt*/
     font-weight: bold; /*félkövér*/
     font-style: italic; /*dőlt*/
-    
+    width: 100%; /*szélesség*/
+    height: 100%; /*magasság*/
 }
 
 table {
